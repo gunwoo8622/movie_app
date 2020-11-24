@@ -8,11 +8,14 @@ React JS Fundamental Coures (2019 Update!)
   c드라이브 documents에서 하니까 된다.
 
 - github에 넣기  
-  github에서 똑같은 이름 Repository 만들기
-  git init
-  git add .
-  git commit -m "맘대로"
-  git branch -M master
+  github에서 똑같은 이름 Repository 만들기  
+  git init  
+  git add .  
+  git commit -m "수정한 내용"  
+  git branch -M main  
+  git remote origin 내URL  
+  git push -u origin main  
+  github는 기본 브랜치를 master에서 main으로 변경 2020.10.01. 부터
 
 - README.md 작성법
   - 줄 바꿈 : 글 끝에서 space 2번
