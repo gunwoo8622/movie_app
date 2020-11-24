@@ -48,7 +48,7 @@ React JS Fundamental Coures (2019 Update!)
   그러면 react는 자동적으로 class component의  
   render method를 실행한다.  
   state는 object이고 component의 data를 넣을 공간이 있고  
-  이 데이터는 \*\*변한다. state사용하는 이유  
+  이 **데이터는 변한다**. state사용하는 이유  
   class component안에 state를 사용하려면  
   {this.state.데이터}  
   setState를 호출하면 react는 state를 refresh하고  
