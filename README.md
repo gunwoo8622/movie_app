@@ -13,3 +13,7 @@ React JS Fundamental Coures (2019 Update!)
   git add .
   git commit -m "맘대로"
   git branch -M master
+
+- README.md 작성법
+  - 줄 바꿈 : 글 끝에서 space 2번
+  - 문단 바꿈 : enter 2번
