@@ -73,3 +73,59 @@ React JS Fundamental Coures (2019 Update!)
   그래야 state를 사용할 수 있다  
   axios는 빠르지 않아서 componentDidMount 함수가 끝날  
   때까지 시간이 걸릴 수 있다고 말해주고 기다린다. async, await
+
+- es6는 ECMA script  
+  movies.data.data.movies 를
+  const { data: { data: { movies }}} 로 바꿀 수 있다
+
+- rendering movies  
+  map을 사용하면 map으로부터 뭔가를 return해야함
+
+- javascript class 안에 있으면  
+  component class에 의해 react가 혼란스러워 한다  
+  안에 html의 속성 class -> className 으로 바꾼다.
+
+- map function은 여러 argument를 준다.  
+  item과 item number(index, number)를 보여준다.
+
+- Deploying to github pages
+
+  1. gh-pages설치 만든 웹사이트를 github page에 나타낸다. 새 터미널을 연다.  
+     npm i gh-pages
+  2. github에서 project이름(movie_app)을 가져온다.  
+     git remote -v
+  3. package.json에서 home page 추가  
+      프로젝트 이름은 무조건 소문자고, 공백 허용 안함  
+     "homepage": "https://gunwoo8622.github.io/movie_app"
+  4. 원래있던 터미널에서 react서버를 내리고  
+     npm run build  
+     작업들을 최소화한 build폴더가 만들어진다.  
+     build폴더를 gh-pages에 업로드 한다.  
+     package.json에서 scripts 안에 deploy를 추가
+     "deploy": "gh-pages -d build"  
+     deploy를 호출하면 먼저 predeploy가 호출된다  
+     폴더이름(build)이 같아야 실행된다.  
+     "predeploy": "npm run build"
+
+- react hook(새로운 것)  
+  state를 갖기 위해 class component를 가질 필요가 없다.
+
+- react-router-dom  
+  네비게이션 만들어주는 패키지  
+  npm install react-router-dom
+
+- route란
+
+- a href 쓰면 강제로 새로고침되면서 react죽인다?  
+  Link to 를 쓴다. router안에서만 작동된다.  
+  router안에 모든 걸 넣을 필요는 없다.
+
+- HashRouter #이 붙어있음  
+  BrowserRouter #이 없지만 git pages에 정확히 설정하기 힘들다.
+
+- route props  
+  라우터에 있는 모든 라우터들은 props를 가진다.  
+  props를 사용할 줄 알아야한다. 정보를 전달하기 위해  
+  링크를 통해 정보를 라우터로 보낸다.(movie.js)
+
+-
